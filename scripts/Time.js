@@ -55,7 +55,7 @@ class Time {
       this.currentTime = 0;
     }
   
-    splitClick() {
+    /* splitClick() {
       let splits = document.getElementById('splits');
   
       let seconds = this.twoDigitsNumber(this.getSeconds());
@@ -67,17 +67,26 @@ class Time {
       let childToAppend = document.createElement('li');
       childToAppend.innerText = `${minute}:${seconds}`;
       splits.appendChild(childToAppend);
-    }
+    } */
    
      draw() {
        const context = this.game.context
-       context.font = "10px monospace"
+       context.font = "50px monospace"
        context.fillstyle = "rgb(228, 208, 34);" 
 
        if (this.currentTime === 15 || this.currentTime === 16 ) {
-          context.fillText(`level 2`, 500, 200);
+          context.fillText(`level 2`, 450, 200);
        }
        
+       if (this.currentTime === 25 || this.currentTime === 26 ) {
+        context.fillText(`level 3`, 450, 200);
+     }
+
+     if (this.currentTime === 40 ) {
+      context.fillText(`level 4`, 450, 200);
+   }
+
+
      }
 
   }

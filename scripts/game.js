@@ -61,7 +61,7 @@ class Game {
     
       }
 
-      if (this.time.currentTime >= 45) {
+      if (this.time.currentTime >= 40) {
         this.speed = 100;
         console.log("aumentou")
         
