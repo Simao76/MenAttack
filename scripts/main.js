@@ -2,8 +2,8 @@ const $canvas = document.querySelector('canvas');
 
 const width = $canvas.width;
 const height = $canvas.height;
-const game = new Game ($canvas);
-this.gameover = new Gameover (this)
+const game = new Game($canvas);
+this.gameover = new Gameover(this)
 this.context = game.context
 this.time = game.time
 
@@ -11,23 +11,24 @@ this.time = game.time
 
 /* const minDec = document.getElementById('timer').innerText = this.time.currentTime; */
 
-    document.getElementById("start-button").onclick = function() {
-       
-        game.startGame()
-        /* game.resetGame(); */
-        game.time.startClick()
-        
+document.getElementById("start-button").onclick = function () {
 
-        console.log("hello")
-    };
 
-    document.getElementById("restart-game").onclick = function() {
-        
-        game.resetGame();
-        game.time.startClick()
-        /* game.time.stopClick() */
-          
-    };
+    /* game.resetGame(); */
+    game.resetGame()
+    game.time.startClick()
+
+
+    console.log("hello")
+};
+
+document.getElementById("restart-game").onclick = function () {
+
+    game.resetGame();
+    game.time.startClick()
+    /* game.time.stopClick() */
+
+};
 
 
 
