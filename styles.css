@@ -1,0 +1,46 @@
+canvas {
+    border: 10px solid rgb(228, 208, 34)  ;
+    background-image: url("/images/backgroundcerto.png");
+   margin-top: 2em;
+}
+
+body {
+    background-image: url("/images/jogobg4.png");
+}
+
+h1 {
+    background-color: rgb(228, 208, 34);
+    
+    font-size: 50px;
+}
+
+#Menu {
+    align-content: flex-end;
+    float: right;
+    padding-top: 10em;
+    padding-right: 6em;
+    
+}
+
+#clock {
+    background-color: rgb(228, 208, 34);
+    size: 3em;
+    font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+#start-button {
+    background-color: rgb(228, 208, 34);
+    size: 3em;
+    font-size: 50px;
+}
+
+#restart-game {
+background-color: rgb(228, 208, 34);
+size: 3em;
+font-size: 50px;
+}
