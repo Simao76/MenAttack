@@ -3,7 +3,7 @@ class Gameover {
       this.game = game;
       this.context = game.context;
       this.image = new Image();
-      this.image.src = "/starter_code/Images/manattack.png"
+      this.image.src = "/images/manattack.png"
     }
 
     draw() {
